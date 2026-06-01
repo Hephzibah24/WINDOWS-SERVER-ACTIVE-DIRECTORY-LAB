@@ -1,1 +1,1 @@
-# WINDOWS-SERVER-ACTIVE-DIRECTORY-LAB
+This lab involves the configuration, administration, and deployment of an enterprise Windows Server environment using the Active Directory Domain Services (AD DS). The lab includes the creation of organizational units, users, groups, assignment of users to their respective groups, creation of shared folders, and configuration of permissions using a Microsoft Windows Server 2019 virtual machine.
