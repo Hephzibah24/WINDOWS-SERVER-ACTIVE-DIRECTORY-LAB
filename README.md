@@ -25,6 +25,15 @@ I added the required features, and the installation was completed successfully. 
 
 ## Organizational Units 
 
+I created Organizational Units to categorize users and groups into their respective departments for easier administration and management. 
+I created the following departments:
+* IT Department
+* HR Department
+* Finance Department
+
+Each of these departments consists of their own groups and users. 
+
+
 ## User and Group Creation
 
 ## Shared Folder Configuration
