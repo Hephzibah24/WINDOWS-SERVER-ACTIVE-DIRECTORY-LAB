@@ -36,7 +36,21 @@ Each of these departments consists of their own groups and users.
 
 ## User and Group Creation
 
-I created 8 users in the Active Directory for the various departments in the organization. This was done by right-clicking on the 'create user' icon on the top part of the Active Directory Users and Computers (ADUC), and then creating a new user. The following groups were created for each department: ### IT DEPARTMENT - IT_ADMINISTRATORS - IT_SUPPORT ### HR DEPARTMENT - HR_STAFF - HR_MANAGERS ### FINANCE DEPARTMENT - FINANCE_TEAM - FINANCE_MANAGERS The groups were created using the Active Directory Users and Computers (ADUC) by right-clicking on the 'create group' icon on the top part of the ADUC, and then creating a new group. Users were assigned to their respective groups by accessing the user's properties, navigating to the **Member Of** tab, and adding the required group memberships.
+I created 8 users in the Active Directory for the various departments in the organization. This was done by right-clicking on the 'create user' icon on the top part of the Active Directory Users and Computers (ADUC), and then creating a new user. 
+The following groups were created for each department: 
+### IT DEPARTMENT 
+- IT_ADMINISTRATORS 
+- IT_SUPPORT
+   
+### HR DEPARTMENT 
+- HR_STAFF 
+- HR_MANAGERS
+  
+### FINANCE DEPARTMENT
+- FINANCE_TEAM 
+- FINANCE_MANAGERS 
+
+The groups were created using the Active Directory Users and Computers (ADUC) by right-clicking on the 'create group' icon on the top part of the ADUC, and then creating a new group. Users were assigned to their respective groups by accessing the user's properties, navigating to the **Member Of** tab, and adding the required group memberships.
 
 ![A](screenshots/creation_of_users.png)
 
