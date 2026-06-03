@@ -3,15 +3,12 @@
 This lab involves the configuration, administration, and deployment of an enterprise Windows Server environment using the Active Directory Domain Services (AD DS). The lab includes the creation of organizational units, users, groups, assignment of users to their respective groups, creation of shared folders, and configuration of permissions using a Microsoft Windows Server 2019 virtual machine.
 
 ## Objective
+
 - Learn and understand the processes involved in Windows administration
-
 - Deploy an Active Directory environment
-
 - Manage enterprise users and groups
-
 - Create shared folders and configure permissions on the shared folders
-
-
+  
 
 ## Lab Environment
 In this lab, I used a Microsoft Windows Server 2019 virtual machine hosted on VMware Workstation.
@@ -33,7 +30,7 @@ I created the following departments:
 
 ![a](screenshots/ous.png)
 
-*Figure 1: Creation of Organizational Units*
+*Figure 1: Creation of Organizational Units*.
 
 Each of these departments consisted of their own groups and users. 
 
@@ -129,13 +126,13 @@ I configured a wallpaper policy to centrally enforce a uniform desktop backgroun
 
 ### Password Policy Configuration
 
-I configured a password policy through Group Policy Management to strengthen user account security within the domain environment, and directly applied it to the **FINANCE_MANAGERS** and **IT_ADMINISTRATORS** groups. 
+I configured a password policy through Group Policy Management to strengthen user account security within the domain environment, and directly applied the policy to the **FINANCE_MANAGERS** and **IT_ADMINISTRATORS** groups. 
 
 This was done through:
 
 **Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Password Policy**
 
-The policy was configured to enforce password-related security settings for the targeted administrative and management groups..
+The policy was configured to enforce password-related security settings for the targeted administrative and management groups.
 
 ![Password Policy](screenshots/creating_password_policy.png)
 
@@ -164,6 +161,6 @@ Through this lab, I demonstrated the following technical skills:
   
 - Software Deployment via Group Policy
   
-- Password Policy Enforcement
+- Password Policy Configuration and Enforcement
   
 - VMware Workstation Virtualization
