@@ -77,4 +77,67 @@ The folder was configured to be accessible to all departments in the organizatio
 
 ## Group Policy Configuration
 
+I configured Group Policy Objects (GPOs) to centrally manage software deployment, desktop customization, and security policies across user systems in the domain environment.
+
+### Wireshark Software Deployment
+
+I downloaded the **.msi** version of Wireshark and saved it in the shared folder called **SOFTWARE_APPLICATIONS** so it could be accessible to other user computers on the domain.
+
+Using **Server Manager > Tools > Group Policy Management**, I configured a software installation policy through:
+
+**Computer Configuration > Policies > Software Settings > Software Installation**
+
+I added the network path to the Wireshark application from the shared folder and assigned the application so it could be automatically installed on user computers. After configuration, I enforced the policy and performed a forced Group Policy update through the terminal to ensure successful deployment.
+
+### Wireshark Deployment Configuration
+
+![Wireshark Installation](screenshots/installed_wireshark.png)
+
+*Figure 4.1: Wireshark installation package prepared for deployment.*
+
+![Assigned Deployment](screenshots/deploying_wireshark_using assigned_method.png)
+
+*Figure 4.2: Configuring Wireshark deployment using the assigned deployment method.*
+
+![Assigned Policy](screenshots/wireshark_assigned.png)
+
+*Figure 4.3: Wireshark successfully assigned through Group Policy.*
+
+![Policy Enforcement](screenshots/enforcement_of_wireshark_policy.png)
+
+*Figure 4.4: Enforcement of the Wireshark deployment policy.*
+
+![Forced GP Update](screenshots/force_update.png)
+
+*Figure 4.5: Forced Group Policy update to apply deployed configurations.*
+
+### Wallpaper Policy Configuration
+
+I configured a wallpaper policy to centrally enforce a uniform desktop background across user computers in the domain environment. This was done through Group Policy by configuring the desktop wallpaper settings and enforcing the background policy for domain users.
+
+![Wallpaper Policy](screenshots/enabling_wallpaper_policy.png)
+
+*Figure 5.1: Enabling wallpaper policy through Group Policy.*
+
+![Wallpaper Enforcement](screenshots/enforcing_background_policy.png)
+
+*Figure 5.2: Enforcement of a centralized desktop wallpaper policy.*
+
+### Password Policy Configuration
+
+I configured a password policy through Group Policy Management to strengthen user account security within the domain environment, especially for the Finance and IT departments. This was done through:
+
+**Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Password Policy**
+
+The policy was configured to enforce password-related security settings across domain users and groups.
+
+![Password Policy](screenshots/creating_password_policy.png)
+
+*Figure 6.1: Creating and configuring password policies through Group Policy.*
+
+![Policy Applied](screenshots/direct_application.png)
+
+*Figure 6.2: Direct application of Group Policy to domain groups.*
+
+
 ## Skills Demonstrated
