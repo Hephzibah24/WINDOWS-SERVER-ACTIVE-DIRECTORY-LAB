@@ -3,13 +3,13 @@
 This lab involves the configuration, administration, and deployment of an enterprise Windows Server environment using the Active Directory Domain Services (AD DS). The lab includes the creation of organizational units, users, groups, assignment of users to their respective groups, creation of shared folders, and configuration of permissions using a Microsoft Windows Server 2019 virtual machine.
 
 ## Objective
-* learn and understand the processes involved in Windows administration
+- Learn and understand the processes involved in Windows administration
 
-* Deploy an Active Directory environment
+- Deploy an Active Directory environment
 
-* Manage enterprise users and groups
+- Manage enterprise users and groups
 
-* Create shared folders and configure permissions on the shared folders
+- Create shared folders and configure permissions on the shared folders
 
 
 
@@ -19,7 +19,7 @@ In this lab, I used a Microsoft Windows Server 2019 virtual machine hosted on VM
 ## Active Directory Deployment
 
 I installed Active Directory Domain Services through Server Manager by navigating to
-**(Manage > Add Roles and Features)** and selecting the Active Directory Domain Services role. 
+**Manage > Add Roles and Features** and selecting the Active Directory Domain Services role. 
 I added the required features, and the installation was completed successfully. I promoted the server to a domain controller by configuring a new Active Directory forest with the domain name **training.global**. During the setup process, DNS services and the NetBIOS name were configured automatically, while a Directory Services Restore Mode (DSRM) password was created.
 
 
@@ -27,11 +27,15 @@ I added the required features, and the installation was completed successfully. 
 
 I created Organizational Units to categorize users and groups into their respective departments for easier administration and management. 
 I created the following departments:
-* IT Department
-* HR Department
-* Finance Department
+- IT Department
+- HR Department
+- Finance Department
 
-Each of these departments consists of their own groups and users. 
+![a](screenshots/ous.png)
+
+*Figure 1: Creation of Organizational Units*
+
+Each of these departments consisted of their own groups and users. 
 
 
 ## User and Group Creation
@@ -95,7 +99,7 @@ I added the network path to the Wireshark application from the shared folder and
 
 *Figure 4.1: Wireshark installation package prepared for deployment.*
 
-![Assigned Deployment](screenshots/deploying_wireshark_using assigned_method.png)
+![Assigned Deployment](screenshots/wiresharkdeploy.png)
 
 *Figure 4.2: Configuring Wireshark deployment using the assigned deployment method.*
 
@@ -125,11 +129,13 @@ I configured a wallpaper policy to centrally enforce a uniform desktop backgroun
 
 ### Password Policy Configuration
 
-I configured a password policy through Group Policy Management to strengthen user account security within the domain environment, especially for the Finance and IT departments. This was done through:
+I configured a password policy through Group Policy Management to strengthen user account security within the domain environment, and directly applied it to the **FINANCE_MANAGERS** and **IT_ADMINISTRATORS** groups. 
+
+This was done through:
 
 **Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Password Policy**
 
-The policy was configured to enforce password-related security settings across domain users and groups.
+The policy was configured to enforce password-related security settings for the targeted administrative and management groups..
 
 ![Password Policy](screenshots/creating_password_policy.png)
 
@@ -141,3 +147,23 @@ The policy was configured to enforce password-related security settings across d
 
 
 ## Skills Demonstrated
+
+Through this lab, I demonstrated the following technical skills:
+
+- Active Directory Administration
+  
+- Windows Server 2019 Administration
+  
+- Active Directory User and Group Management
+  
+- Organizational Unit (OU) Management
+  
+- Access Control and Permission Management
+  
+- Group Policy Object (GPO) Configuration
+  
+- Software Deployment via Group Policy
+  
+- Password Policy Enforcement
+  
+- VMware Workstation Virtualization
