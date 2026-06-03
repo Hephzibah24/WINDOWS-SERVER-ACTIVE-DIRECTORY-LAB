@@ -62,6 +62,19 @@ The groups were created using the Active Directory Users and Computers (ADUC) by
 
 ## Shared Folder Configuration
 
-## Permissions Configuration
+I created a shared folder called **SOFTWARE_APPLICATIONS** on the desktop environment of the Windows Server virtual machine. 
+The folder was configured through the sharing settings by navigating to **Properties > Sharing > Advanced Sharing** and enabling the folder sharing option.
+
+The folder was configured to be accessible to all departments in the organization. Read permissions were assigned to users to allow access to the shared applications, while the **IT_ADMINISTRATORS** group was given full permissions for administrative purposes.
+
+![a](screenshots/sharing_APPLICATIONS_folder.png)
+
+*Figure 3.1: Configuration of the SOFTWARE_APPLICATIONS shared folder.*
+
+![b](screenshots/assigned_permissions.png)
+
+*Figure 3.2: Permission settings for the SOFTWARE_APPLICATIONS shared folder.*
+
+## Group Policy Configuration
 
 ## Skills Demonstrated
